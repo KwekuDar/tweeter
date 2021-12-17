@@ -16,16 +16,67 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
 }
+
+::placeholder {
+  font: 'Source Sans Pro', sans-serif;
+}
+article:hover .handle {
+  visibility: visible;
+}
+.handle {
+  visibility: hidden;
+}
+article:hover .buttons {
+  visibility: visible;
+}
+.buttons {
+  visibility: hidden;
+}
+
 main {
   width: 90%;
   margin: auto;
   text-align: center;
   background-color: #f4f1ec;
+  margin-top: 5rem;
 }
+
+article {
+  border: 5px solid black;
+  width: 100%;
+  margin: auto;
+  padding: 5rem;
+  word-break: break-word;
+}
+
+article header{
+  display:flex;
+  justify-content: space-between;
+}
+
+article .user {
+  display:flex;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+article .profile-tweet {
+  margin: 1em;
+}
+
+article footer{
+  display:flex;
+  border-top: 5px solid black;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

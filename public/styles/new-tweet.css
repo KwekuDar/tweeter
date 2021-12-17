@@ -4,8 +4,45 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+/*new tweet render*/
 .new-tweet {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
+  font-family: “Source Sans Pro” , sans-serif;
+  font-size: 20px;
+}
+
+#tweet-text {
+  width:100%;
+  outline:none;
+  border:none;
+  height: 2rem;
+  border-bottom-style: solid;
+  border-bottom-width: 0.2rem;
+  background-color: #f4f1ec ;
+}
+
+.tweet-buttons{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 1rem;
+}
+
+
+.submit-button{
+  background-color:#4056A1 ;
+  font-family: "Bungee",cursive;
+  color: #ffffff;
+}
+
+/* counter */
+.counter{
+  display:flex;
+  justify-content: flex-end;
+  font-family: "Bungee",cursive;
+}
+
+/* over limit color change*/
+.counter-overlimit {
+  color:red;
 }
