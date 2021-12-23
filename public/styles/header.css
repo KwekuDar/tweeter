@@ -1,25 +1,47 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-header {
-    display: flex;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    background-color: #25008a;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-    
-
+.profile {
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003e80;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 }
 .name {
-    color: white;
+  color: white;
 }
 
 img {
-    padding-top: 10rem;
+  margin-top: 10rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .profile {
+    margin: 50px;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px 20px;
+  }
+  .container {
+    margin: 50px;
+    margin-top: 100px;
+    max-width: 700px;
+  }
 }

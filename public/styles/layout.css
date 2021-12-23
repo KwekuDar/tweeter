@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -15,53 +17,65 @@ html {
  */
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 120px; /* Add a top margin to avoid content overlay */
   display: flex;
   flex-direction: column;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
+  font-family: “Source Sans Pro”, sans-serif;
 }
 
-::placeholder {
-  font: 'Source Sans Pro', sans-serif;
-}
-article:hover .handle {
-  visibility: visible;
-}
-.handle {
-  visibility: hidden;
-}
-article:hover .buttons {
-  visibility: visible;
-}
-.buttons {
-  visibility: hidden;
-}
-
-main {
+.container {
+  justify-content: center;
   width: 90%;
   margin: auto;
-  text-align: center;
   background-color: #f4f1ec;
-  margin-top: 5rem;
+  margin-top: 50px;
 }
 
 article {
   border: 5px solid black;
   width: 100%;
   margin: auto;
-  padding: 5rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
   word-break: break-word;
 }
 
-article header{
-  display:flex;
+label {
+  font: “Source Sans Pro”, sans-serif;
+  font-weight: 700;
+}
+
+/* hover*/
+article:hover {
+  box-shadow: 25px 30px rgba(1, 5, 14, 0.3);
+}
+
+article:hover .handle {
+  visibility: visible;
+}
+
+.handle {
+  visibility: hidden;
+}
+
+article:hover .buttons {
+  visibility: visible;
+}
+
+.buttons {
+  visibility: hidden;
+}
+article header {
+  display: flex;
   justify-content: space-between;
 }
 
 article .user {
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   font-size: 20px;
 }
@@ -70,8 +84,8 @@ article .profile-tweet {
   margin: 1em;
 }
 
-article footer{
-  display:flex;
+article footer {
+  display: flex;
   border-top: 5px solid black;
   justify-content: space-between;
   margin: 0.5em;

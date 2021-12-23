@@ -1,48 +1,75 @@
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 /*new tweet render*/
 .new-tweet {
   display: flex;
   flex-direction: column;
-  font-family: “Source Sans Pro” , sans-serif;
+  font-family: “Source Sans Pro”, sans-serif;
   font-size: 20px;
 }
 
 #tweet-text {
-  width:100%;
-  outline:none;
-  border:none;
-  height: 2rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 4rem;
   border-bottom-style: solid;
   border-bottom-width: 0.2rem;
-  background-color: #f4f1ec ;
+  background-color: #f4f1ec;
 }
 
-.tweet-buttons{
-  display:flex;
-  justify-content:space-between;
+.tweet-buttons {
+  display: flex;
+  justify-content: space-between;
   margin-top: 1rem;
 }
 
-
-.submit-button{
-  background-color:#4056A1 ;
-  font-family: "Bungee",cursive;
+.submit-button {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4056a1;
+  font-family: "Bungee", cursive;
   color: #ffffff;
 }
 
 /* counter */
-.counter{
-  display:flex;
+.counter {
+  display: flex;
   justify-content: flex-end;
-  font-family: "Bungee",cursive;
+  font-family: "Bungee", cursive;
 }
 
 /* over limit color change*/
 .counter-overlimit {
-  color:red;
+  color: red;
+}
+
+.error1 {
+  margin-top: 20px;
+  border: 5px solid red;
+  background-color: white;
+  color: red;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.error2 {
+  margin-top: 20px;
+  border: 5px solid red;
+  background-color: white;
+  color: red;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
 }

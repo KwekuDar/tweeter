@@ -42,7 +42,7 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header class="profile">
       <div>
           <img src="./images/profile-hex.png"> 
       </div>
@@ -55,7 +55,11 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class="error1 hide"></div>
+        <div class="error2 hide"></div>
+
         <h2>Compose Tweet</h2>
+
         <form method="POST" action="/tweets">
           <textarea name="text" placeholder="What are you humming about" id="tweet-text"></textarea>
           <div class="tweet-buttons">
@@ -64,8 +68,7 @@
           </div>
         </form>
       </section>      
-      <section id="tweets-container" >
-        
+      <section id="tweets-container">
       </section>
     </main>
   </body>
