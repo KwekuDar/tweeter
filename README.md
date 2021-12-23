@@ -14,3 +14,11 @@ Tweeter is a simple, single-page Twitter clone with a stylish twist.
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Twitter Feed"](https://github.com/KwekuDar/tweeter/blob/master/docs/feed.png?raw=true)
+
+!["Profile Pic"](https://github.com/KwekuDar/tweeter/blob/master/docs/profile.png?raw=true)
+
+!["Random Tweets"](https://github.com/KwekuDar/tweeter/blob/master/docs/twitter%20page.png?raw=true)
