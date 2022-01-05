@@ -8,31 +8,46 @@ html {
 }
 
 nav {
-  height: 120px;
   width: 100%;
+  height: 120px;
   background-color: #4056a1;
   color: #ffffff;
   padding: 1.5em;
-  position: fixed;
+  position: fixed; /* Set the navbar to fixed position */
   top: 0;
+  width: 100%;
+}
+
+/* nav container*/
+.navcontainer {
   display: flex;
   justify-content: space-between;
-  z-index: 1;
 }
+
+/* nav sets font*/
+nav > span {
+  font-size: 20px;
+}
+
+/* tweeter logo*/
 #logo {
-  font-family: "Bungee", sans-serif;
-  font-size: 2.3em;
-}
-.right-nav {
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  font-size: 40px;
+  font-family: "Bungee", cursive;
+}
+
+.rightnav {
+  display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
-.fa-angles-down {
-  color: red;
+.fas.fa-angle-double-down {
+  color: crimson;
 }
 
+/* media query*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   nav {
     background-color: #003e80;

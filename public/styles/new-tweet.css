@@ -6,7 +6,8 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/*new tweet render*/
+
+/*new tweet*/
 .new-tweet {
   display: flex;
   flex-direction: column;
@@ -18,21 +19,18 @@ html {
   width: 100%;
   outline: none;
   border: none;
-  height: 4rem;
   border-bottom-style: solid;
-  border-bottom-width: 0.2rem;
+  border-bottom-width: 5px;
   background-color: #f4f1ec;
 }
 
-.tweet-buttons {
+.sendtweet {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
 }
 
-.submit-button {
+.button {
   display: flex;
-  justify-content: space-between;
   background-color: #4056a1;
   font-family: "Bungee", cursive;
   color: #ffffff;
@@ -41,7 +39,6 @@ html {
 /* counter */
 .counter {
   display: flex;
-  justify-content: flex-end;
   font-family: "Bungee", cursive;
 }
 
@@ -50,6 +47,7 @@ html {
   color: red;
 }
 
+/* error over count */
 .error1 {
   margin-top: 20px;
   border: 5px solid red;
@@ -60,6 +58,7 @@ html {
   text-align: center;
 }
 
+/* error empty */
 .error2 {
   margin-top: 20px;
   border: 5px solid red;
@@ -70,6 +69,7 @@ html {
   text-align: center;
 }
 
+/* hide errors when none */
 .hide {
   display: none;
 }

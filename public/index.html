@@ -33,16 +33,16 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="navcontainer">
       <span id="logo">tweeter</span>
       <div class="right-nav"> 
         <span class="write-tweet"> <b>Write</b> a New Tweet</span>
-        <i class="fa-solid fa-angles-down"></i>
+        <i class="fas fa-angle-double-down"></i>
       </div>
     </nav>
 
     <!-- Header -->
-    <header class="profile">
+    <header class="profile-header">
       <div>
           <img src="./images/profile-hex.png"> 
       </div>
@@ -60,10 +60,11 @@
 
         <h2>Compose Tweet</h2>
 
-        <form method="POST" action="/tweets">
-          <textarea name="text" placeholder="What are you humming about" id="tweet-text"></textarea>
-          <div class="tweet-buttons">
-            <button type="submit" class="submit-button">Tweet</button>
+        <form method="POST" action="/tweets" id="submit">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="sendtweet">
+            <button class="button" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
