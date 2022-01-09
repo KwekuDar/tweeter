@@ -55,6 +55,11 @@ const renderTweets = function(tweets) {
     $("#tweets-container").prepend(newTweet);
   }
 };
+const renderRecentTweet = function(tweets) {
+  const recentTweet = tweets[tweets.length - 1];
+  $('#tweets-container').prepend(createTweetElement(recentTweet));
+
+};
 
 
 // doc ready
@@ -86,13 +91,8 @@ $(document).ready(function() {
         .done(function() {
           $("#submit").trigger("reset");
           $(".counter").html(140);
+          $.get('/tweets', renderRecentTweet);
           // function called for get request
-          $.ajax('/tweets', { method: 'GET' })
-      .then(function(tweets) {
-        // render function call for you
-        window.location.reload();
-      });
-
         });
     }
   });
